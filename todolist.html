@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My To Do List</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="todolist.css">
+
+</head>
+<body>
+	<table class="color">
+		<tr> 
+			<td class="school">school</td>
+			<td class="work">work</td>
+			<td class="food">food</td>
+			<td class="sport">sport</td>
+			<td class="movie">movie</td>
+			<td class="other">other</td>
+		</tr>
+	</table>
+	<div id="choose">
+	<div class="createNewItem">
+		<input id="userInput" type="text" placeholder="New item..." maxlength="27">
+		<label for="itemType">Type of item: </label>
+        <select class="itemType">
+        <option value='school'>school</option>
+        <option value='work'>work</option>
+        <option value='food'>food</option>
+        <option value='sport'>sport</option>
+        <option value='movie'>movie</option>
+        <option value='other'>other</option>
+    	</select>
+		<label for="time">Time: </label>
+        <select class="hour">
+        <option value='none'>-</option>
+        <option value='0'>0</option>
+        <option value='1'>1</option>
+        <option value='2'>2</option>
+        <option value='3'>3</option>
+        <option value='4'>4</option>
+        <option value='5'>5</option>
+        <option value='6'>6</option>
+		<option value='7'>7</option>
+		<option value='8'>8</option>
+		<option value='9'>9</option>
+		<option value='10'>10</option>
+		<option value='11'>11</option>
+		<option value='12'>12</option>
+		<option value='13'>13</option>
+		<option value='14'>14</option>
+		<option value='15'>15</option>
+		<option value='16'>16</option>
+		<option value='17'>17</option>
+		<option value='18'>18</option>
+		<option value='19'>19</option>
+		<option value='20'>20</option>
+		<option value='21'>21</option>
+		<option value='22'>22</option>
+		<option value='23s'>23</option>
+    	</select>
+        <select class="minute">
+        <option value='none'>-</option>
+        <option value='00'>00</option>
+        <option value='10'>10</option>
+        <option value='20'>20</option>
+        <option value='30'>30</option>
+        <option value='40'>40</option>
+        <option value='50'>50</option>
+    	</select>
+		<button id="enter"></button>
+	</div>
+	<div class="item_list">
+	<ul>
+	</ul>
+</div>
+</div>
+<script type="text/javascript" src="todolist.js"></script>
+</body>
+</html>
