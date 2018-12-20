@@ -14,4 +14,5 @@ A simple todolist created by javascript
 	<li>Click on the Finished button to mark the item as finished</li>
 	<li>Delete the item by clicking the Delete button</li>
 </ul>
-![todolist](https://github.com/zhangshyue/javascript-to-do-list/master/img.png)
+<img alt="tosolist" src="https://github.com/zhangshyue/javascript-to-do-list/blob/master/img.png">
+
