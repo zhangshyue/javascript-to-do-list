@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>My To Do List</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="https://bootswatch.com/3/simplex/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+	<link rel="stylesheet" type="text/css" href="todolist.css">
+
+</head>
+<body>
+  <table class="color">
+    <tr> 
+      <td class="school">school</td>
+      <td class="work">work</td>
+      <td class="food">food</td>
+      <td class="sport">sport</td>
+      <td class="leisure">leisure</td>
+      <td class="other">other</td>
+    </tr>
+  </table>
+  <div class="row" >
+    <div class="col-md-1" style="border-radius: 10px; margin:160px 0 0 250px;">
+      <select class="itemType form-control" style="border-radius: 10px;">
+        <option>school</option>
+        <option>work</option>
+        <option>food</option>
+        <option>sport</option>
+        <option>leisure</option>
+        <option>other</option>
+      </select>
+    </div>
+    <div class="row col-md-4 p-3" style=" margin:160px 0 0 0;">
+    	<input type="text" class="form-control" id="itemValue" style="border-radius: 10px;" placeholder="Add item..."/>
+    </div>
+      <button type="button" class="btn add-btn col-md-1 mb-2"  style="  margin:160px 0 0 0;">Add</button>
+    <div class="row col-md-1 p-3" style="margin:160px 0 0 0;">
+    	<button class="btn clear-btn text-muted hidden" title="Clear your ToDo list"><span> Clear To Do List</span></button>
+    </div>
+    </div>
+  	<ul id="itemList"  style="margin:20px 310px 0 260px;"> 
+    </ul>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="todolist.js"></script>
+</body>
+</html>

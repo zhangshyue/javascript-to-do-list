@@ -1,0 +1,118 @@
+body {
+	background-image: url("background.jpg");
+	font-family: 'Lato',sans-serif;
+	font-size: 15px;
+	color:black;
+}
+
+.row .type {
+	border:2px solid #FCFAF2;
+	background-color: transparent;
+	border-radius: 10px;
+	width: 20px;
+}
+
+
+.btn{
+  	height:36px;
+border:2px solid #FCFAF2;
+	background-color: transparent;
+	border-radius: 10px;
+color:#FCFAF2;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.btn:hover{
+  color: #000;
+}
+.btn::before{
+  transform: scaleY(0);
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #FCFAF2;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn:hover::before{
+  transform: scaleY(1);
+}
+input {
+	border-radius: 10px;
+}
+.hidden {
+	display:none;
+}
+
+.modify {
+	background-color:transparent;
+	width :100%;
+	height:30px;
+	border:none;
+}
+
+table.color {
+	border-spacing:10px;
+	border:none;
+	margin-top:50px;
+	margin-left:80px;
+}
+
+td {
+	width:200px;
+	border-radius: 10px;
+}
+
+td.school {
+	background-color: #e5f4fc;
+}
+td.work {
+	background-color: #e6f7d4;
+}
+td.food {
+	background-color: #f9f4db;
+}
+td.sport{
+	background-color: #fff0ea;
+}
+td.leisure {
+	background-color: #edeaff;
+}
+td.other {
+	background-color: #ffeafe;
+}
+
+li .row div {
+	height:35px;
+}
+li .row div label{
+	padding-top: 6px;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom:10px;
+}
+
+li .row .col-md-6 {
+	border-radius: 10px;
+	color: #FCFAF2;
+	background-color: transparent;
+}
+
+.finished button {
+
+	text-decoration: line-through;
+
+}
+
+::placeholder {
+  color: #FCFAF2;
+}
