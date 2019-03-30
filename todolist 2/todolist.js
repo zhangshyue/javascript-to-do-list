@@ -63,7 +63,7 @@ $(document).ready(
 			})
 			$('.finished-btn').click(function(){
 				$(this).parent().parent().children(":nth-child(2)").addClass('finished');
-				$(this).parent().parent().children("first").css('background-color','transparent');
+				$(this).parent().parent().children(":first").css('background-color','transparent');
 				
 			})
 			$('.modify-btn').off().on('click',function(){
@@ -74,14 +74,11 @@ $(document).ready(
 					`)
 				$(this).parent().parent().children(":nth-child(2)").on('keypress',function(e) {
 				    if(e.which == 13) {
-				    	
 				        var modified_item = $(this).children(':first').val();
-				        console.log(modified_item);
 				        $(this).empty();
 				        $(this).append(`
 				        	<label>`+modified_item+`</label>
 				        	`)
-				        console.log(modified_item+ '%');
 				    }
 				});
 			});
