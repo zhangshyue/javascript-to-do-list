@@ -118,9 +118,7 @@ function addItem(){
 		input1.addEventListener("keypress",editItemByEnter);
 
 		function editItemByEnter(event){
-			console.log("here");
 		if(event.keyCode===13 && input1.value.length>0){
-			console.log("1");
 			var newlabel = document.createElement("label");
 			newlabel.appendChild(document.createTextNode(input1.value));
 			li.replaceChild(newlabel,label);
